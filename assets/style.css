@@ -11,8 +11,8 @@
     background-color: #7f574c;
     display: flex;
     justify-content: space-between;
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-left: 90px;
+    padding-right: 90px;
     p {
       color: white;
       padding-top: 12px;
@@ -110,6 +110,21 @@
       }
     }
   }
+  .section-2-added {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: none;
+    .part-2 {
+      i {
+        font-size: 30px;
+      }
+    }
+  }
   .section-3 {
     width: 100%;
     height: 450px;
@@ -177,7 +192,7 @@
       justify-content: center;
       .icon {
         width: 300px;
-        height: 100px;
+        height: 110px;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -244,7 +259,7 @@
     text-align: center;
     padding-top: 140px;
     p {
-      font-size: 30px;
+      font-size: 25px;
       font-weight: 900;
       background: linear-gradient(to bottom, white, rgb(137, 125, 103));
       background-clip: text;
@@ -263,7 +278,7 @@
     padding-right: 50px;
     .delicio {
       width: 400px;
-      height: 170px;
+      height: 140px;
       display: flex;
       gap: 20px;
       flex-direction: column;
@@ -279,7 +294,7 @@
     }
     .account {
       width: 200px;
-      height: 170px;
+      height: 140px;
       display: flex;
       flex-direction: column;
       gap: 25px;
@@ -305,7 +320,7 @@
     }
     .informations {
       width: 200px;
-      height: 170px;
+      height: 140px;
       display: flex;
       flex-direction: column;
       gap: 25px;
@@ -331,7 +346,7 @@
     }
     .about {
       width: 320px;
-      height: 170px;
+      height: 140px;
       display: flex;
       flex-direction: column;
       gap: 25px;
@@ -377,6 +392,89 @@
         &:hover {
           transform: scale(1.4);
         }
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .container {
+    .section-4 {
+      .chocolates {
+        display: none;
+      }
+    }
+    .section-1 {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .section-2 {
+      display: none;
+    }
+    .section-2-added {
+      display: flex;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    .section-3 {
+      p {
+        font-size: 40px;
+      }
+      span {
+        font-size: 30px;
+      }
+    }
+    .section-4 {
+      height: 1200px;
+      .icons {
+        width: 370px;
+        height: 360px;
+        flex-direction: column;
+        align-items: center;
+      }
+      .boxes {
+        height: 750px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        .box {
+          width: 170px;
+          p {
+            font-size: 10px;
+          }
+          img {
+            width: 300px;
+          }
+        }
+      }
+    }
+    .section-6 {
+      height: 650px;
+      flex-direction: column;
+      align-items: start;
+      gap: 20px;
+      padding-left: 20px;
+    }
+    .section-7 {
+      padding-left: 20px;
+      padding-right: 20px;
+      p {
+        font-size: 10px;
+      }
+    }
+  }
+}
+@media (max-width: 478px) {
+  .container {
+    .section-6 {
+      .delicio {
+        width: 300px;
+      }
+    }
+    .section-7 {
+      p {
+        font-size: 8px;
       }
     }
   }
